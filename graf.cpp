@@ -26,7 +26,6 @@ public:
  matrix = new int* [n];
  for (i = 1; i < n; i++)
  {
-10
  matrix[i] = new int[i];
  }
  }
@@ -62,7 +61,6 @@ public:
  for (i = 0; i < n; i++)
  {
  A[i][i] = 0;
-11
  }
  for (i = 0; i < n; i++)
  {
@@ -97,7 +95,6 @@ public:
  this->n = n;
  spisok = new node * [n];
  for (int i = 0; i < n; i++)
-12
  {
  spisok[i] = NULL;
  }
@@ -133,7 +130,6 @@ public:
  add_first(j, length, i);
  }
  else
-13
  {
  add_new(j, length, i);
  }
@@ -169,7 +165,6 @@ public:
  cout << l->number_node + 1 << ":" << l->length << "->";
  l = l->next;
  }
-14
  cout << l->number_node + 1 << ":" << l->length << " ";
  }
  cout << endl;
@@ -205,7 +200,6 @@ public:
  }
  return A;
  }
-15
 };
 void Centr_grafa(Igraf& graf, int n);
 int main()
@@ -239,7 +233,6 @@ int main()
  file.close();
  cout << "С помощью какой структуры хранения вы хотите найти центр графа?" <<
 endl;
-16
  cout << "1.Матрица весов" << endl;
  cout << "2.Списки смежности" << endl;
  cin >> choise;
@@ -273,7 +266,6 @@ void Centr_grafa(Igraf& graf, int n)
  cout << endl;
  }
 
-17
  for (i = 0; i < n; i++)
  {
  max = 0;
